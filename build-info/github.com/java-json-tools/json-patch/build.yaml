@@ -1,10 +1,11 @@
 ---
-repositories:
-  - "spring-plugins-milestone"
 additionalArgs:
-  - "-x"
-  - "checkSigningRequirements"
+- -x
+- checkSigningRequirements
+repositories:
+- spring-plugins-milestone
 preBuildScript: |
+  # echo foo
   sed -i '/options.addStringOption/d' build.gradle
   sed -i '/.*group: "org.springframework.build.gradle".*/d' build.gradle
   sed -i '/.*propdeps.*/d' build.gradle
