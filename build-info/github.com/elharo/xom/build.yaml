@@ -1,0 +1,5 @@
+---
+additionalArgs:
+- jar
+- maven
+tool: ant
